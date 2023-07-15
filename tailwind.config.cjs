@@ -15,8 +15,8 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      primary: "#9333EA",
-      secondary: "#ff7e33",
+      primary: "#4a4a4a", // changed to your logo color
+      secondary: colors.white, // changed to your logo color
       info: "#0C63E7",
       black: colors.black,
       white: colors.white,
