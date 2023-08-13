@@ -43,7 +43,7 @@ import Container from "./Container.astro";
             class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
           >
             <span
-              class="relative text-base font-semibold text-primary dark:text-white"
+              class="relative text-base animate-pulse font-semibold text-primary dark:text-white"
               >Get in Touch</span
             >
           </a>
@@ -79,7 +79,7 @@ import Container from "./Container.astro";
           </div>
         </div>
       </div>
-      <div class="mt-12 grid grid-cols-6 sm:grid-cols-4 md:grid-cols-6">
+      <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3">
         <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
           <img
             src="./images/clients/appnester.svg"
@@ -94,6 +94,16 @@ import Container from "./Container.astro";
           <img
             src="./images/clients/luca-pacioli.svg"
             class="h-12 w-auto mx-auto"
+            loading="lazy"
+            alt="client logo"
+            width=""
+            height=""
+          />
+        </div>
+        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img
+            src="./images/clients/blockchain-arabia.svg"
+            class="h-[4.5rem] w-auto mx-auto"
             loading="lazy"
             alt="client logo"
             width=""

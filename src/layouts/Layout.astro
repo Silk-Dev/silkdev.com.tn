@@ -27,12 +27,13 @@ import AppHeader from "../components/AppHeader.astro"
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		<meta name="apple-mobile-web-app-title" content="SilkDev">
 		<meta name="theme-color" content="#ffffff">
+		<link rel="canonical" href="https://silkdev.com.tn"/>
 		<title>Silkdev: Expert Web Development Services</title>
 	
 		<link rel=preconnect href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-white dark:bg-gray-900">
-		<AppHeader/>
+	<body class="bg-white main-body dark:bg-gray-900">
+		<AppHeader client:load/>
 		<slot />
 		<AppFooter/>
 	</body>
