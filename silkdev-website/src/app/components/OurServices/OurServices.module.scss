@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap');
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+
+   
+    margin-top: 0%;
+
+}
+.containerh1{
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 35px;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -0.84px;
+}
+.containerp{
+    color: rgba(0, 0, 0, 0.67);
+    font-family: Poppins;
+    font-size: 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    margin-top: 0%;
+
+}
+.cardscontainer{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    width: 21rem;
+    height: 25rem;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: white;
+   
+
+ .cardimg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+    width: 408px;
+    height: 475px;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+   
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFF;
+font-family: Poppins;
+font-size: 31px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+
+  
+
+  
+ 
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
