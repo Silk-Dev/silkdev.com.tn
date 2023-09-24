@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.nav{
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    height: 40px;
+    padding: 0px 40px 20px 40px;
+    gap: 25px;
+    margin-top: 15px;
+}
+.icon{
+    margin-top: 20px;
+    margin-right: 25px;
+    width: 35px;
+    height: 35px;
+}
+.logo{
+    width: 220px;
+    height: 140px;
+    margin-top: -25px;
+}
+.link{
+    font-family: poppins;
+    font-weight: 500;
+}
