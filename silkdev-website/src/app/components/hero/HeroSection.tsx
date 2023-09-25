@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './heroSection.module.scss'
 import Header from '../header/Header'
 import Button from '../button/Button'
-import SideBar from './sidebar/SideBar'
+import SideBar from './sidenav/SideNav'
 const HeroSection = () => {
   return (
     <div className={styles.heroSection}>

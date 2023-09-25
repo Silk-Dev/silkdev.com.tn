@@ -1,9 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import styles from './header.module.scss'
 import Image from 'next/image'
 import logo from '@/app/public/img/Image.svg'
 import navIcon from '@/app/public/img/Vector.svg'
+import SideBar from '../sidebar/SideBar'
 const Header = () => {
+    const [show,setShow] = useState(false)
   return (
     <div className={styles.header}>
         <div>
@@ -16,9 +19,10 @@ const Header = () => {
             <h3 className={styles.link}>Blog</h3>
             <h3 className={styles.link}>Contact</h3>
         </div>
-        <div>
+        <div onClick={()=>{setShow(true)}}>
         <Image alt='' src={navIcon} className={styles.icon}></Image>
             </div>
+        {show && <SideBar />}
     </div>
   )
 }

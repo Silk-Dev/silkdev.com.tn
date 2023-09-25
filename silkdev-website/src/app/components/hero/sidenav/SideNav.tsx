@@ -3,7 +3,7 @@ import Image from 'next/image'
 import linkedIn from '@/app/public/img/linkedIn.svg'
 import facebook from '@/app/public/img/facebook.svg'
 import instagram from '@/app/public/img/instagram.svg'
-import styles from './sidebar.module.scss'
+import styles from './sidenav.module.scss'
 const SideBar = () => {
   return (
     <div className={styles.navList}>
