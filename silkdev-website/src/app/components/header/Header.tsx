@@ -5,7 +5,7 @@ import Image from 'next/image'
 import logo from '@/app/public/img/Image.svg'
 import navIcon from '@/app/public/img/Vector.svg'
 import SideBar from '../sidebar/SideBar'
-const Header = () => {
+const Header = (props:any) => {
     const [show,setShow] = useState(false)
   return (
     <div className={styles.header}>
@@ -19,7 +19,7 @@ const Header = () => {
             <h3 className={styles.link}>Blog</h3>
             <h3 className={styles.link}>Contact</h3>
         </div>
-        <div onClick={()=>{setShow(true)}}>
+        <div onClick={()=>{setShow(!show);props.navbarToggle(show);}}>
         <Image alt='' src={navIcon} className={styles.icon}></Image>
             </div>
         {show && <SideBar />}
