@@ -26,7 +26,7 @@ const OurServices = () => {
         />
         <div className={styles['card-content']}>
           <h2>Web developement</h2>
-          
+          <p>dfghj</p>
         </div>
       </div>
       <div className={styles.card}>
