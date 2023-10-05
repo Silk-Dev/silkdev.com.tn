@@ -5,7 +5,11 @@ import SideBar from './components/sidebar/SideBar'
 import OurServices from './components/OurServices/OurServices'
 import Portfolio from './components/projectSection/Portfolio'
 import OurBlog from './components/OurBlog/OurBlog'
+import Contact from './components/contactSection/Contact'
+import styles from '../../src/app/components/Clientcomment/client.module.scss';
 import { useState } from 'react'
+
+import ClientComment from './components/Clientcomment/ClientComment'
 export default function Home(props:any) {
   const [show,setShow] = useState(false)
   const ChangeNavbarToggle =(data:any)=>{
@@ -18,7 +22,13 @@ export default function Home(props:any) {
      <HeroSection navbarToggle={ChangeNavbarToggle}/>
      <OurServices />
      <Portfolio />
+    
+     <Contact/>
      <OurBlog/>
+     <div className={styles.container}>
+     <ClientComment/>
+      </div>
+      
      </div>
      
 }
