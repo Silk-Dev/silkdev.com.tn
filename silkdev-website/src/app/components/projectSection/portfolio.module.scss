@@ -10,21 +10,31 @@
     font-weight: 500;
     letter-spacing: -0.84px;
     margin-left: 13%;
-    padding-top: 50px;
+    padding-top: 70px;
+    margin-bottom: 50px;
 }
 .projectContainer{
     margin-left: 100px;
     width: 400px;
+    // height: 450px;
     margin-bottom: 0px;
     border-radius:20px;
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px 20px 20px;
 
 }
+.projectWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed for your layout */
+    gap: 20px; /* Adjust the gap between items */
+    max-width: 100%; /* Ensure the container expands to the available width */
+  }
 .img{
-    width: 400px;
+    width: 430px;
     height: 500px;
     border-radius: 50px;
     margin-top: -50px;
+    margin-left: -15px;
 }
 .projTitle{
     color: #ffffff;
