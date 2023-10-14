@@ -8,7 +8,7 @@ import OurBlog from './components/OurBlog/OurBlog'
 import Contact from './components/contactSection/Contact'
 import styles from '../../src/app/components/Clientcomment/client.module.scss';
 import { useState } from 'react'
-
+import { Carousel } from 'react-responsive-carousel';
 import ClientComment from './components/Clientcomment/ClientComment'
 export default function Home(props:any) {
   const [show,setShow] = useState(false)
