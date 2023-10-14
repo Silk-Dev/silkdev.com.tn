@@ -6,6 +6,7 @@ import OurServices from './components/OurServices/OurServices'
 import Portfolio from './components/projectSection/Portfolio'
 import OurBlog from './components/OurBlog/OurBlog'
 import Contact from './components/contactSection/Contact'
+import Footer from './components/footer/Footer'
 import styles from '../../src/app/components/Clientcomment/client.module.scss';
 import { useState } from 'react'
 
@@ -27,6 +28,7 @@ export default function Home(props:any) {
      <OurBlog/>
      <div className={styles.container}>
      <ClientComment/>
+     <Footer/>
       </div>
       
      </div>
