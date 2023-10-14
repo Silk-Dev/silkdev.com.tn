@@ -97,10 +97,14 @@ margin-top: -2%;
     line-height: 26.4px; 
   }
   #containercard {
-    max-width: 23%;
+    max-width: 53%;
     margin: auto;
     margin-top: 2vh;
+   
   }
+  .containercardrow{ display:flex;
+    flex-direction:row;
+  gap:1rem}
   /* Style button element */
   .button {
     border: none;
@@ -140,8 +144,15 @@ margin-top: -2%;
     padding: 8px;
   
     border-radius: 12px;
+    
   }
   .containerrow{
     display: flex;
     flex-direction: row;
+  }
+
+  .carouselitems {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
   }

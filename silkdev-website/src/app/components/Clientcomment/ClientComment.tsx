@@ -4,73 +4,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import svg from '../../../../public/img/avatar.png'
 import Image from 'next/image'
 import styles from'./client.module.scss'
+import comments from '../../public/assets/comments'
+import img from '@/app/public/img/Ellipse.svg'
 type PositionType = "left" | "center" | "right";
 const ClientComment = (props:any) => {
   const [activeIndex, setActiveIndex] = useState([0, 0]);
-  const projects = [
-    {
-      id: 1,
-      title: "Agnes Remi",
-      job:"Back-end developer at MyDodow",
-      img: "../../public/img/Ellipse.svg",
-      width:10,
-      height:3,
-      description:
-        "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-    },
-    {
-        id: 2,
-        title: "Agnes Remi",
-        job:"Back-end developer at MyDodow",
-        img: "../../public/img/Ellipse.svg",
-        width:10,
-        height:3,
-        description:
-          "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-      },
-      {
-        id: 3,
-        title: "Agnes Remi",
-        job:"Back-end developer at MyDodow",
-        img: "../../public/img/Ellipse.svg",
-        width:10,
-        height:3,
-        description:
-          "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-      },{
-        id: 4,
-        title: "Agnes Remi",
-        job:"Back-end developer at MyDodow",
-        img: "../../public/img/Ellipse.svg",
-        width:10, height:3,
-        description:
-          "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-      },
-      {
-          id: 5,
-          title: "Agnes Remi",
-          job:"Back-end developer at MyDodow",
-          img: "../../public/img/Ellipse.svg",
-          width:10, height:3,
-          description:
-            "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-        },
-        {
-          id:6,
-          title: "Agnes Remi",
-          job:"Back-end developer at MyDodow",
-          img: "../../public/img/Ellipse.svg",
-          width:10, height:3,
-          description:
-            "<< Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising! >>"
-        }
-    
-  ];
+  
 
   const indexInArrayScope: number =
-    ((activeIndex[0] % projects.length) + projects.length) % projects.length;
+    ((activeIndex[0] % comments.length) + comments.length) % comments.length;
 
-    const visibleProjects = [...projects, ...projects].slice(
+    const visibleProjects = [...comments, ...comments].slice(
       indexInArrayScope,
       indexInArrayScope + 3
     );
@@ -146,12 +90,19 @@ const ClientComment = (props:any) => {
     exit="exit"
     transition={{ duration: 1 }}
   >
-    <div className={styles.cardcontent}>
-
+   <div className={styles.cardcontent}>
+   <div className={styles.divrow}>
+    <Image className={styles.avatar} 
+          src={img}
+          alt=""
+        />
+         <div className={styles.divcolumn}>
     <h1 className={styles.h}>{project.title}</h1>
     <p className={styles.p}>{project.job}</p>
+    
+    
     <p className={styles.p2}>{project.description}</p>
-   </div>
+   </div></div></div>
     {/* <p>{project.description}</p> */}
   </motion.div>
 ))}
@@ -169,6 +120,7 @@ const ClientComment = (props:any) => {
           ▶︎
         </motion.button>
       </div>
+      
     </div></div>
       );
     }
