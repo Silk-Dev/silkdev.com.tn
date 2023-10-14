@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer'
 import Servicesdesc from './components/servicedesc/servicesdesc'
 import styles from '../../src/app/components/Clientcomment/client.module.scss';
 import { useState } from 'react'
-
+import { Carousel } from 'react-responsive-carousel';
 import ClientComment from './components/Clientcomment/ClientComment'
 export default function Home(props:any) {
   const [show,setShow] = useState(false)
@@ -21,7 +21,11 @@ export default function Home(props:any) {
     <>
      {!show &&
      <div>
-     <HeroSection navbarToggle={ChangeNavbarToggle}/>
+     <HeroSection 
+     home={true}
+     title={'The Digital Agency'} 
+     desc={'We build digital experiences that wow customers and drive results'} 
+     navbarToggle={ChangeNavbarToggle}/>
      <OurServices />
      <Portfolio />
     

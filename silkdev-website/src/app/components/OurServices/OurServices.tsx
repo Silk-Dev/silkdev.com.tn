@@ -36,16 +36,8 @@ const OurServices = () => {
           alt=""
         />
         <div className={styles['card-content']}>
-          <h2>E-commerce Website</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo
-            laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut
-            hic.
-          </p>
-          {/* <a href="#" className={styles.button}>
-            Find out more
-            <span className="material-symbols-outlined">arrow_right_alt</span>
-          </a> */}
+          <h2 className={styles.servTitle}>E-commerce Website</h2>
+          <p className={styles.hoverText} style={{position:"absolute",bottom:"0px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde iure numquam praesentium nemo laudantium cum sunt molestias aliquid ipsa ad autem ducimus illum nesciunt voluptatibus, dolor odit quos veritatis?</p>
         </div>
       </div>
       <div className={styles.card}>
@@ -55,16 +47,9 @@ const OurServices = () => {
           alt=""
         />
         <div className={styles['card-content']}>
-          <h2>Brand Consultation</h2>
-          {/* <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo
-            laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut
-            hic.
-          </p> */}
-          {/* <a href="#" className={styles.button}>
-            Find out more
-            <span className="material-symbols-outlined">arrow_right_alt</span>
-          </a> */}
+          <h2 className={styles.servTitle}>Brand Consultation</h2>
+          <p className={styles.hoverText} style={{position:"absolute",bottom:"0px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde iure numquam praesentium nemo laudantium cum sunt molestias aliquid ipsa ad autem ducimus illum nesciunt voluptatibus, dolor odit quos veritatis?</p>
+        
         </div>
       </div>
     </div>

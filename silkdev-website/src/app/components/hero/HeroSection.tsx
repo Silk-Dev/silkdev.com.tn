@@ -6,20 +6,24 @@ import SideBar from './sidenav/SideNav'
 const HeroSection = (props:any) => {
   const [show,setShow] = useState(false)
   const ChangeNavbarToggle =(data:any)=>{
-    setShow(!show)
+    setShow(!show);
   }
   return (
       <div className={styles.heroSection}>
-      <Header navbarToggle={props.navbarToggle}/>
+      <Header navbarToggle={props.navbarToggle}/> 
       <div className={styles.inline}>
       <div className={styles.content}>
-      <h1 className={styles.title}>The Digital Agency</h1>
-      <h1 className={styles.subtitle}>That Gets Result</h1>
-      <h3 className={styles.desc}>We build digital experiences that wow <br></br>
-       customers and drive results.</h3>
-      <div className={styles.callToAction}>
-      <Button />
-      </div>
+      <h1 className={styles.title}>{props.title}</h1>
+       {(props.home) && 
+       <h1 className={styles.subtitle}>That Gets Result</h1>
+       }
+      <h3 className={styles.desc}>{props.desc}</h3>
+      {(props.home) && 
+       <div className={styles.callToAction}>
+       <Button />
+       </div>
+       }
+      
        </div>
        <SideBar />
       </div>
