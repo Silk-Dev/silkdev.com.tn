@@ -6,7 +6,7 @@ import SideBar from './sidenav/SideNav'
 const HeroSection = (props:any) => {
   const [show,setShow] = useState(false)
   const ChangeNavbarToggle =(data:any)=>{
-    setShow(!show)
+    setShow(!show);
   }
   return (
       <div className={styles.heroSection}>

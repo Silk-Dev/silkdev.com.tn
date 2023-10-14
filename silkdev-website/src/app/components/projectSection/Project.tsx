@@ -4,14 +4,16 @@ import { motion } from 'framer-motion';
 import styles from './portfolio.module.scss'
 import projectImg from '@/app/public/img/project.svg'
 const Project = (props:any) => {
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(false);
+  console.log(props.img);
+  
   return (
     <div className={styles.projectWrapper} style={{marginTop:(props.id%2==0)? "100px" :"0"}}>
       
       {!show &&
       <div className={styles.projectContainer} >
         <div>
-        <Image className={styles.img} alt='' src={projectImg} width={100} height={100} onClick={()=>{setShow(true)}}></Image>
+        <Image className={styles.img} alt='#' src={projectImg} width={100} height={100} onClick={()=>{setShow(true)}}></Image>
         <h3 className={styles.projTitle}>{props.title}</h3>
         </div>
       </div>

@@ -4,10 +4,19 @@ import styles from "./sidebar.module.scss";
 import Image from 'next/image'
 import svg from '../../../../public/svg/close_FILL0_wght400_GRAD0_opsz24.svg'
 import logo from "../../../../public/img/logo.png"
+import { motion } from "framer-motion"
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+}
 const SideBar = (props:any) => {
   const [show,setShow] = useState(true)
   return (
-    <div className={styles.backgroundSidebar}>
+    <motion.nav
+         animate={show ? "open" : "closed"}
+         variants={variants}
+         className={styles.backgroundSidebar}>
       <div className={styles.header}>
      
       <Image src={logo} alt="logo" className={styles.logo} />
@@ -25,7 +34,7 @@ const SideBar = (props:any) => {
           <a href="#">Contact</a>
         </div>
       </div>
-      </div>
+      </motion.nav>
   );
 };
 

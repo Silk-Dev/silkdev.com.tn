@@ -5,8 +5,15 @@ import Image from 'next/image'
 import logo from '@/app/public/img/Image.svg'
 import navIcon from '@/app/public/img/Vector.svg'
 import SideBar from '../sidebar/SideBar'
+
 const Header = (props:any) => {
     const [show,setShow] = useState(false)
+
+    const toggleSidebar = async () => {
+        setShow(!show);
+        props.navbarToggle(show);
+    };
+    
   return (
     <div className={styles.header}>
         <div>
@@ -19,7 +26,7 @@ const Header = (props:any) => {
             <h3 className={styles.link}>Blog</h3>
             <h3 className={styles.link}>Contact</h3>
         </div>
-        <div onClick={()=>{setShow(!show);props.navbarToggle(show);}}>
+        <div onClick={()=>{toggleSidebar}}>
         <Image alt='' src={navIcon} className={styles.icon}></Image>
             </div>
         {show && <SideBar />}
