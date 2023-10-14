@@ -7,6 +7,7 @@ import Portfolio from './components/projectSection/Portfolio'
 import OurBlog from './components/OurBlog/OurBlog'
 import Contact from './components/contactSection/Contact'
 import Footer from './components/footer/Footer'
+import Servicesdesc from './components/servicedesc/servicesdesc'
 import styles from '../../src/app/components/Clientcomment/client.module.scss';
 import { useState } from 'react'
 import { Carousel } from 'react-responsive-carousel';
@@ -34,7 +35,7 @@ export default function Home(props:any) {
      <ClientComment/>
      <Footer/>
       </div>
-      
+      <Servicesdesc/>
      </div>
      
 }
