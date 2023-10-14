@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap');
+
+.black-overlay {
+  filter: brightness(0.7); /* Adjust the brightness value to control the darkness (0.4 = 60% darkness) */
+ 
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+    margin-bottom: 100px;
+    margin-top: 0%;
+
+}
+.containerh1{
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 35px;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -0.84px;
+}
+.containerp{
+    color: rgba(0, 0, 0, 0.67);
+    font-family: Poppins;
+    font-size: 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    margin-top: 0%;
+
+}
+.cardscontainer{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    width: 27rem;
+    height: 28rem;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    position: relative;
+    color: white;
+   
+
+ .cardimg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+   
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFF;
+font-family: Poppins;
+font-size: 31px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+.hoverText{
+  display: none;
+}
+.card:hover{
+  .hoverText{
+    display: block;
+    margin-left: 25px;
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+  .servTitle{
+    transition: inset .3s ease-out;
+    bottom: 150px;
+  }
+}
