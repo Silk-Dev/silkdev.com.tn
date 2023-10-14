@@ -12,7 +12,9 @@ const Header = (props:any) => {
     const toggleSidebar = async () => {
         setShow(!show);
         props.navbarToggle(show);
+        console.log('show',show);
     };
+    
     
   return (
     <div className={styles.header}>
@@ -26,7 +28,7 @@ const Header = (props:any) => {
             <h3 className={styles.link}>Blog</h3>
             <h3 className={styles.link}>Contact</h3>
         </div>
-        <div onClick={()=>{toggleSidebar}}>
+        <div onClick={()=>{toggleSidebar()}}>
         <Image alt='' src={navIcon} className={styles.icon}></Image>
             </div>
         {show && <SideBar />}

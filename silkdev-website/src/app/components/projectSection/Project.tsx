@@ -13,7 +13,7 @@ const Project = (props:any) => {
       {!show &&
       <div className={styles.projectContainer} >
         <div>
-        <Image className={styles.img} alt='#' src={projectImg} width={100} height={100} onClick={()=>{setShow(true)}}></Image>
+        <Image className={styles.img} alt='#' src={props.img} width={100} height={100} onClick={()=>{setShow(true)}}></Image>
         <h3 className={styles.projTitle}>{props.title}</h3>
         </div>
       </div>

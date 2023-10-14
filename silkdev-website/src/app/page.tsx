@@ -20,7 +20,11 @@ export default function Home(props:any) {
     <>
      {!show &&
      <div>
-     <HeroSection navbarToggle={ChangeNavbarToggle}/>
+     <HeroSection 
+     home={true}
+     title={'The Digital Agency'} 
+     desc={'We build digital experiences that wow customers and drive results'} 
+     navbarToggle={ChangeNavbarToggle}/>
      <OurServices />
      <Portfolio />
     
