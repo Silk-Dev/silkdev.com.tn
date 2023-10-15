@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 
 import styles from "./ourblog.module.scss";
 import Image from 'next/image'
-import cardimg from '../../../../public/img/cardimg.png'
-import avatar from '../../public/img/avatar.png'
+
 import svg from '../../../../public/svg/mode_edit_white_24dp.svg'
 import blogs from '../../public/assets/blogs'
 
@@ -29,7 +28,7 @@ const OurServices = () => {
 
       {blogs.map((blog) => (
 <div className={styles.card}>
-  <Image className={styles.img} src={cardimg} alt="Lago di Braies"/>
+  <Image className={styles.img} src={blog.img} alt="Lago di Braies"/>
 
 
   <div className={styles.carddetails}>
@@ -42,7 +41,7 @@ const OurServices = () => {
     <p className={styles.p}>
     {blog.description}</p>
 <div className={styles.containeravatar}>
-    <Image src={avatar} alt="Avatar" className={styles.avatar}/>
+    <Image src={blog.avatar} alt="Avatar" className={styles.avatar}/>
     <div className={styles.containeravatarclm}>
     <h1 className={styles.avatarh1}>{blog.user_name}</h1>
     <p className={styles.avatarp}>{blog.date}</p></div> 

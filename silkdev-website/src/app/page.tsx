@@ -35,7 +35,7 @@ export default function Home(props:any) {
      <ClientComment/>
      <Footer/>
       </div>
-      <Servicesdesc/>
+      
      </div>
      
 }
