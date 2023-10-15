@@ -2,12 +2,8 @@ import React, { useState } from 'react'
 import styles from './heroSection.module.scss'
 import Header from '../header/Header'
 import Button from '../button/Button'
-import SideBar from './sidenav/SideNav'
+import SideNar from './sidenav/SideNav'
 const HeroSection = (props:any) => {
-  const [show,setShow] = useState(false)
-  const ChangeNavbarToggle =(data:any)=>{
-    setShow(!show);
-  }
   return (
       <div className={styles.heroSection}>
       <Header navbarToggle={props.navbarToggle}/> 
@@ -17,7 +13,7 @@ const HeroSection = (props:any) => {
        {(props.home) && 
        <h1 className={styles.subtitle}>That Gets Result</h1>
        }
-      <h3 className={styles.desc}>{props.desc}</h3>
+      <h3 className={styles.desc} style={{marginLeft : props.home ? "120px" : "0" }}>{props.desc}</h3>
       {(props.home) && 
        <div className={styles.callToAction}>
        <Button />
@@ -25,7 +21,7 @@ const HeroSection = (props:any) => {
        }
       
        </div>
-       <SideBar />
+       <SideNar />
       </div>
     </div>
   )

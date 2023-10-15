@@ -4,11 +4,11 @@ import linkedIn from '@/app/public/img/linkedIn.svg'
 import facebook from '@/app/public/img/facebook.svg'
 import instagram from '@/app/public/img/instagram.svg'
 import styles from './sidenav.module.scss'
-const SideBar = () => {
+const SideNar = () => {
   return (
     <div className={styles.navList}>
        <h3 className={styles.cliqued}>Home</h3>
-       <h3 className={styles.link}>About Us</h3>
+       <h3 className={styles.link}>About</h3>
             <h3 className={styles.link}>Services</h3>
             <h3 className={styles.link}>Projects</h3>
             <h3 className={styles.link}>Blog</h3>
@@ -22,4 +22,4 @@ const SideBar = () => {
   )
 }
 
-export default SideBar
+export default SideNar

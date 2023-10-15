@@ -12,7 +12,6 @@ const Header = (props:any) => {
     const toggleSidebar = async () => {
         setShow(!show);
         props.navbarToggle(show);
-        console.log('show',show);
     };
     
     
