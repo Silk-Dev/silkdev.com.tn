@@ -93,7 +93,7 @@ const ClientComment = (props:any) => {
    <div className={styles.cardcontent}>
    <div className={styles.divrow}>
     <Image className={styles.avatar} 
-          src={img}
+          src={project.img}
           alt=""
         />
          <div className={styles.divcolumn}>
@@ -103,7 +103,7 @@ const ClientComment = (props:any) => {
     
     <p className={styles.p2}>{project.description}</p>
    </div></div></div>
-    {/* <p>{project.description}</p> */}
+   
   </motion.div>
 ))}
 

@@ -3,4 +3,4 @@ const nextConfig = {
     pages: '/pages',
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

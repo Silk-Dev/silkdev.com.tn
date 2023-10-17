@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
+
 .backgroundSidebar{
     background: linear-gradient(180deg, #23272A 0%, #2A2F34 46.26%, #2B3136 100%);
     height: 100vh;
@@ -9,16 +11,11 @@
 .sidenav {
  
   width: 32%;
-
+  font-family:poppins;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
   margin-left: 20%;
-
-  // margin-top: 3%;
-
-  
-  
   }
   .centeredContainer {
     display: flex;

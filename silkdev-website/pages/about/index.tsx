@@ -11,16 +11,20 @@ const About = (props:any) => {
   console.log('here',show);
   
   return (
+    <>
+    {!show &&
     <div>
       <HeroSection 
      home={false}
      title={'About Us'} 
      desc={'We are a team of experienced creatives with an entrepreneurial mindset. We are constantly rethinking the future by creating innovative products and services that solve real-world problems.'} 
      navbarToggle={ChangeNavbarToggle}/>
-
      <Company />
+     </div>
+    }
      {show && <SideBar closeBtn={ChangeNavbarToggle}/>}
-    </div>
+   
+    </>
   )
 }
 
