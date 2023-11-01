@@ -21,9 +21,9 @@ const SideBar = (props: any) => {
       <h3 className={styles.link}>Services</h3>
       <h3 className={styles.link}>Projects</h3>
       <h3 className={styles.link}>Blog</h3>
-      <a href="#" className={styles.link} onClick={openContactPopup}>
+      <h3 className={styles.link} onClick={openContactPopup}>
         Contact
-      </a>
+      </h3>
       <div className={styles.contact}>
         <Image alt="" src={linkedIn}></Image>
         <Image alt="" src={facebook}></Image>

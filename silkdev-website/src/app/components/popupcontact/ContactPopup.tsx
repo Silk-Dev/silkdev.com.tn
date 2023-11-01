@@ -6,6 +6,7 @@ import Image from "next/image";
 interface ContactPopupProps {
   onClose: () => void; // Define the type for the onClose prop
 }
+
 const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
   return (
     <div className={styles.popup}>
