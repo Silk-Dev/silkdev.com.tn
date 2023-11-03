@@ -16,18 +16,20 @@ const SideNar = (props: any) => {
   };
   return (
     <div className={styles.navList}>
-       <h3 className={styles.cliqued}>Home</h3>
-       <h3 className={styles.link}>About</h3>
-            <h3 className={styles.link}>Services</h3>
-            <h3 className={styles.link}>Projects</h3>
-            <h3 className={styles.link}>Blog</h3>
-            <h3 className={styles.link} onClick={openContactPopup}>Contact</h3> 
-            <div className={styles.contact}>
-            <Image alt='' src={linkedIn}></Image>
-            <Image alt='' src={facebook}></Image>
-            <Image alt='' src={instagram}></Image>
-            </div>
-            {showContactPopup && <ContactPopup onClose={closeContactPopup} />}
+      <h3 className={styles.cliqued}>Home</h3>
+      <h3 className={styles.link}>About Us</h3>
+      <h3 className={styles.link}>Services</h3>
+      <h3 className={styles.link}>Projects</h3>
+      <h3 className={styles.link}>Blog</h3>
+      <h3 className={styles.link} onClick={openContactPopup}>
+        Contact
+      </h3>
+      <div className={styles.contact}>
+        <Image alt="" src={linkedIn}></Image>
+        <Image alt="" src={facebook}></Image>
+        <Image alt="" src={instagram}></Image>
+      </div>
+      {showContactPopup && <ContactPopup onClose={closeContactPopup} />}
     </div>
   );
 };

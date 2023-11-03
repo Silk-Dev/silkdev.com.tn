@@ -20,7 +20,7 @@ return (
       </div>
      <div id={styles.containercard}>
 <div className={styles.containercardrow}>
-<Carousel autoPlay={false} infiniteLoop={true} interval={2000}>
+<Carousel autoPlay={true} infiniteLoop={true} interval={2000}>
       {blogs.map((blog, index) => (
         <div key={index}>
         <Blog img={blog.img} 
