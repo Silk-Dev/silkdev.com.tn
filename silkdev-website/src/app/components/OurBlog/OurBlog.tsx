@@ -11,66 +11,32 @@ import blogs from "../../public/assets/blogs";
 const OurServices = () => {
   return (
     <div className={styles.background}>
-      <div className={styles.desktop}>
-        <div className={styles.containerrow}>
-          <div className={styles.container}>
-            <h1 className={styles.containerh1}>Our Blog</h1>
-            <p className={styles.containerp}>
-              As a tight-knit team of experts,
-              <br /> we create memorable and
-              <br /> emotional websites, digital
-              <br /> experiences, and native apps.
-            </p>
-          </div>
-          <div id={styles.containercard}>
-            <div className={styles.containercardrow}>
-              <Carousel autoPlay={true} infiniteLoop={true} interval={2000}>
-                {blogs.map((blog, index) => (
-                  <div key={index}>
-                    <Blog
-                      img={blog.img}
-                      title={blog.title}
-                      description={blog.description}
-                      avatar={blog.avatar}
-                      userName={blog.user_name}
-                      date={blog.date}
-                    />
-                  </div>
-                ))}
-              </Carousel>
-            </div>
-          </div>
+      <div className={styles.containerrow}>
+        <div className={styles.container}>
+          <h1 className={styles.containerh1}>Our Blog</h1>
+          <p className={styles.containerp}>
+            As a tight-knit team of experts,
+            <br /> we create memorable and
+            <br /> emotional websites, digital
+            <br /> experiences, and native apps.
+          </p>
         </div>
-      </div>
-
-      <div className={styles.mobile}>
-        <div className={styles.containercolumn}>
-          <div className={styles.container}>
-            <h1 className={styles.containerh1}>Our Blog</h1>
-            <div id={styles.containercard}>
-              <div className={styles.containercardrow}>
-                <Carousel autoPlay={true} infiniteLoop={true} interval={2000}>
-                  {blogs.map((blog, index) => (
-                    <div key={index}>
-                      <Blog
-                        img={blog.img}
-                        title={blog.title}
-                        description={blog.description}
-                        avatar={blog.avatar}
-                        userName={blog.user_name}
-                        date={blog.date}
-                      />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            </div>
-            <p className={styles.containerp}>
-              As a tight-knit team of experts,
-              <br /> we create memorable and
-              <br /> emotional websites, digital
-              <br /> experiences, and native apps.
-            </p>
+        <div id={styles.containercard}>
+          <div className={styles.containercardrow}>
+            <Carousel autoPlay={true} infiniteLoop={true} interval={2000}>
+              {blogs.map((blog, index) => (
+                <div key={index}>
+                  <Blog
+                    img={blog.img}
+                    title={blog.title}
+                    description={blog.description}
+                    avatar={blog.avatar}
+                    userName={blog.user_name}
+                    date={blog.date}
+                  />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
       </div>
