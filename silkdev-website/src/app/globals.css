@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ .carousel .slider-wrapper{
+  width: 65% !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
- body{
-  margin: 00;
- 
- }
-
+#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > div > ul > li > div > div > div > div.ourblog_containeravatar__tSiYO > img{
+  width: 50px;
+  height: 50px;
+}
+#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > button.control-arrow.control-next{
+  display: none;
+}
+#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > p{
+  display: none;
+}
+#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > div > ul > li:nth-child(2) > div > div > div > div.ourblog_spaceBetween__fXw4I > img{
+  width: 10%;
+}
+.box{
+  margin: 0;
+}#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > div > ul > li:nth-child(2) > div > div > div > div.ourblog_spaceBetween__fXw4I > img{
+  width: 10%;
+}
+#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider {
+ width:22% !important;
+}

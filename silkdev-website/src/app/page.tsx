@@ -12,7 +12,6 @@ import styles from "../../src/app/components/Clientcomment/client.module.scss";
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import ClientComment from "./components/Clientcomment/ClientComment";
-import Teams from "./components/Team/Teams";
 export default function Home(props: any) {
   const [show, setShow] = useState(false);
   const ChangeNavbarToggle = (data: any) => {
@@ -39,7 +38,6 @@ export default function Home(props: any) {
             <ClientComment />
             <Footer />
           </div>
-          <Teams />
         </div>
       )}
       {show && <SideBar closeBtn={ChangeNavbarToggle} />}

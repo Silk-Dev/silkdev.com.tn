@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap');
-
 .background{
-    background-color: #1E1E1E;
-    width: 100%;
-    height: 500px;
+  background-color: #1E1E1E;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 100px;
 }
+@media only screen and (min-width: 601px) {
+  .mobile{
+    display:none
+  }
+
 .containerh1{
     color: #DAD7DF;
     font-family: Poppins;
@@ -51,39 +57,42 @@
     font-weight: 700;
     line-height: 33.8px;
   }
+  .imgCont{
+    width: 40%;
+  }
   .avatar {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     margin-top:4%;
+    height: 50px;
   }
  .containeravatar{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
  }
 .containeravatarclm{
     display: flex;
     flex-direction: column;
-    margin-left: 9%;
+    margin-left: 6%;
+    width: 100%;
+    
  }
  .avatarh1{
     color: var(--blacks-high-emphasis, #313237);
-
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 26.4px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.4px;
  }
  .avatarp{
     color: var(--blacks-mid-emphasis, #718797);
     font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 16.8px; 
-margin-top: -2%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; 
+    margin-top: -2%;
  }
  .svg{margin-left: 11%;
     margin-top: 6%;}
@@ -97,7 +106,7 @@ margin-top: -2%;
     line-height: 26.4px; 
   }
   #containercard {
-    max-width: 53%;
+    width: 200px;
     margin: auto;
     margin-top: 2vh;
    
@@ -122,7 +131,11 @@ margin-top: -2%;
     /* Button is a clickable element, therefore it should have a pointer cursor */
     cursor: pointer;
   }
-  
+  .spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
   .carddetails {
     /* Add space around the details */
     padding: 16px 8px 8px 8px;
@@ -130,7 +143,7 @@ margin-top: -2%;
   .img{
     width: 100%;
     border-radius: 12px;
-    height: 214px;
+    // height: 214px;
     object-fit: cover;
   }
   .card {
@@ -155,4 +168,165 @@ margin-top: -2%;
     display: flex;
     overflow: hidden;
     width: 100%;
+  }
+
+}
+  @media only screen and (max-width: 600px){
+    .desktop{
+      display:none
+    }
+   
+  .containerh1{color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -0.48px;}
+    .containerp{
+      color: rgba(235, 235, 235, 0.86);
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 55px;
+  
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+      margin-left: 13%;
+      margin-top: 0%;
+  }
+  
+  /* Style div elements that have class equal to tag */
+  .tag {
+      padding: 4px 8px;
+      border: 1px solid #e5eaed;
+    
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #788697;
+    }
+    
+    /* Style div elements that have class equal to name */
+    .name {
+      color: var(--blacks-high-emphasis, #313237);
+      /* Headings/Heading */
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 33.8px;
+    }
+    .imgCont{
+      width: 40%;
+    }
+    .avatar {
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-top:4%;
+      height: 50px;
+    }
+   .containeravatar{
+      display: flex;
+      justify-content: space-between;
+   }
+  .containeravatarclm{
+      display: flex;
+      flex-direction: column;
+      margin-left: 6%;
+      width: 100%;
+      
+   }
+   .avatarh1{
+      color: var(--blacks-high-emphasis, #313237);
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26.4px;
+   }
+   .avatarp{
+      color: var(--blacks-mid-emphasis, #718797);
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.8px; 
+      margin-top: -2%;
+   }
+   .svg{margin-left: 11%;
+      margin-top: 6%;}
+    .p {
+      color: var(--blacks-mid-emphasis, #718797);
+     
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26.4px; 
+    }
+    #containercard {
+      margin-left: -22px;
+    }
+    .containercardrow{ display:flex;
+      flex-direction:row;
+    gap:1rem}
+    /* Style button element */
+    .button {
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+    
+      font-weight: 600;
+      color: #0077ff;
+      background-color: #e0efff;
+    
+      /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+      margin: 0 auto;
+      display: block;
+    
+      /* Button is a clickable element, therefore it should have a pointer cursor */
+      cursor: pointer;
+    }
+    .spaceBetween{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+    .carddetails {
+      /* Add space around the details */
+      padding: 16px 8px 8px 8px;
+    }
+    .img{
+      width: 100%;
+      border-radius: 12px;
+      // height: 214px;
+      object-fit: cover;
+    }
+    .card {
+      /* Change background color */
+      background-color: white;
+    
+      /* Add border */
+      border: 1px solid #bacdd8;
+    
+      /* Add space between the border and the content */
+      padding: 8px;
+    
+      border-radius: 12px;
+      width: 300px
+    }
+    .containerrow{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .carouselitems {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    } 
   }
