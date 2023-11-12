@@ -25,9 +25,9 @@ const SideNar = (props: any) => {
         Contact
       </h3>
       <div className={styles.contact}>
-        <Image alt="" src={linkedIn}></Image>
-        <Image alt="" src={facebook}></Image>
-        <Image alt="" src={instagram}></Image>
+        <Image className={styles.icons} alt="" src={linkedIn}></Image>
+        <Image className={styles.icons} alt="" src={facebook}></Image>
+        <Image className={styles.icons} alt="" src={instagram}></Image>
       </div>
       {showContactPopup && <ContactPopup onClose={closeContactPopup} />}
     </div>

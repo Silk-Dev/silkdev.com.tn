@@ -9,14 +9,13 @@ import Footer from '../../src/app/components/footer/Footer'
 
 const Services = (props:any) => {
   const [show,setShow] = useState(false);
-  const [current,setCurrent] = useState('story');
   const ChangeNavbarToggle =(data:any)=>{
     setShow(!show)
   }
   console.log('here',show);
   
   return (
-    <>
+    <div  style={{margin:"0px"}}>
     {!show &&
     <div className={styles.content}>
       
@@ -36,7 +35,7 @@ const Services = (props:any) => {
     }
       {show && <SideBar closeBtn={ChangeNavbarToggle}/>}
     
-    </>
+    </div>
   )
 }
 

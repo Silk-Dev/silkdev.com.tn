@@ -5,11 +5,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 99%;
+    width: 98%;
     height: 95vh;
     border-radius: 50px;
     padding-top: 20px;
-    margin: 9px;
+    margin: 1%;
     
 }
 .content{
@@ -39,9 +39,7 @@ line-height: 55px;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
-    // margin-left: 120px;
     line-height: 55px; 
-    //text-align: center;
     width: 70%;
     }
     .callToAction{
@@ -53,4 +51,110 @@ line-height: 55px;
     .inline{
         display: flex;
         justify-content: space-between;
+    }
+    @media only screen and (max-width:1400px) {
+        .content{
+            margin-left: 100px;
+            margin-top: 0vh;
+            }
+         .title{
+            font-size: 45px;
+            }
+        .subtitle{
+            font-size: 55px;
+            
+            }
+         .desc{
+            font-size: 24px;
+            line-height: 40px; 
+            margin-left: 120px;
+            width: 60%;
+            }
+            .callToAction{
+                margin-left: 100px;
+                width: 50%;
+            }
+    }
+    @media only screen and (max-width:1000px) {
+        .content{
+            margin-left: 70px;
+            }
+         .title{
+            font-size: 35px;
+            }
+        .subtitle{
+            font-size: 40px;
+            
+            }
+         .desc{
+            font-size: 20px;
+            line-height: 40px; 
+            margin-left: 120px;
+            width: 60%;
+            }
+            .callToAction{
+                margin-left: 100px;
+                width: 50%;
+            }
+    }
+    @media only screen and (max-width:800px) {
+        .content{
+            margin-left: 70px;
+            }
+         .title{
+            font-size: 25px;
+            }
+        .subtitle{
+            font-size: 35px;
+            margin-left: 50px;
+            
+            }
+         .desc{
+            font-size: 20px;
+            line-height: 40px; 
+            margin-left: 70px;
+            width: 60%;
+            }
+            .callToAction{
+                margin-left: 100px;
+                width: 50%;
+                margin-top: 50px;
+            }
+    }
+    @media only screen and (max-width:768px) {
+        .heroSection{
+            height: 100%;
+            
+        }
+        .content{
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            }
+         .title{
+            font-size: 25px;
+            margin: 0;
+            }
+        .subtitle{
+            font-size: 30px;
+            margin-left: 0px;
+            margin: 0;
+            
+            }
+         .desc{
+            font-size: 18px;
+            line-height: 30px; 
+            margin: 0;
+            text-align: center;
+            width: 80%;
+            }
+            .callToAction{
+                margin-left: 0px;
+                width: 50%;
+                margin-top: 0px;
+                margin-bottom: 50px;
+            }
     }

@@ -10,7 +10,6 @@ import Footer from "./components/footer/Footer";
 import Servicesdesc from "./components/servicedesc/servicesdesc";
 import styles from "../../src/app/components/Clientcomment/client.module.scss";
 import { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
 import ClientComment from "./components/Clientcomment/ClientComment";
 export default function Home(props: any) {
   const [show, setShow] = useState(false);
@@ -31,7 +30,7 @@ export default function Home(props: any) {
           />
           <OurServices />
           <Portfolio />
-
+          
           <Contact />
           <OurBlog />
           <div className={styles.container}>

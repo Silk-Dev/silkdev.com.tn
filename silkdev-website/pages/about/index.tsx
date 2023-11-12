@@ -15,9 +15,9 @@ const About = (props:any) => {
   console.log('here',show);
   
   return (
-    <div className="box" style={{margin:0}}>
+    <div className="box" style={{margin:"0px"}}>
     {!show &&
-    <div style={{margin:0}} className="box">
+    <div >
       <HeroSection 
      home={false}
      title={'About Us'} 

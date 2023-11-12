@@ -1,12 +1,16 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./header.module.scss";
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import logo from "@/app/public/img/Image.svg";
 import navIcon from "@/app/public/img/Vector.svg";
 import SideBar from "../sidebar/SideBar";
 import ContactPopup from "../popupcontact/ContactPopup";
+import Link from "next/link";
+
 const Header = (props: any) => {
+  // const router = useRouter();
   const [show, setShow] = useState(false);
   const [showContactPopup, setShowContactPopup] = useState(false);
   const openContactPopup = () => {
@@ -24,9 +28,11 @@ const Header = (props: any) => {
 
   return (
     <div className={styles.header}>
-      <div>
+      <Link href="/">
+        <div>
         <Image alt="" src={logo} className={styles.logo}></Image>
-      </div>
+        </div>
+      </Link>
       <div className={styles.nav}>
         <h3 className={styles.link}>About Us</h3>
         <h3 className={styles.link}>Services</h3>
