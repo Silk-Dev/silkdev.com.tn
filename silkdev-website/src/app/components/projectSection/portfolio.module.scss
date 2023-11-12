@@ -22,12 +22,29 @@
     padding: 40px 20px 20px 20px;
 
 }
-.projectWrapper {
+.projectWrapperLeft {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Adjust as needed for your layout */
     gap: 20px; /* Adjust the gap between items */
     max-width: 100%; /* Ensure the container expands to the available width */
+  }
+  .projectWrapperRight {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed for your layout */
+    gap: 20px; /* Adjust the gap between items */
+    max-width: 100%; /* Ensure the container expands to the available width */
+  }
+  .projCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projBox{
+    width: 40%;
+    padding: 10px;
   }
 .img{
     width: 430px;
@@ -65,3 +82,53 @@
     font-family: poppins;
 
 }
+@media only screen and (max-width:1200px) {
+    .secTitle{
+        margin-left: 5%;
+    }
+    .projectContainer{
+        margin-left: 0px;
+        width: 400px;
+        // height: 450px;
+        margin-bottom: 0px;
+        border-radius:20px;
+        padding: 40px 20px 20px 20px;
+    
+    }
+    .projectWrapperRight{
+        display: flex;
+        justify-content: end;
+    }
+    .projCont{
+        gap: 25px;
+    }
+  }
+  @media only screen and (max-width:1100px) {
+    .projBox{
+        width: 70%;
+        padding: 10px;
+      }
+      .projectWrapperRight {
+        margin-top: 0px;
+      }
+      .img{
+        width: 100%;
+    }
+    .projCont{
+        gap: 0px;
+    }
+  }
+  @media only screen and (max-width:630px) {
+    .projBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .projCont{
+        width: 100%;
+    }
+    .projectContainer{
+        width: 300px;
+    
+    }
+  }

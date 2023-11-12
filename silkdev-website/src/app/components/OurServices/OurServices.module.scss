@@ -8,8 +8,9 @@
 
 .container{ 
     display: flex;
+    padding: 2%;
     flex-direction: column;
-    margin-left: 13%;
+    margin-left: 10%;
     margin-bottom: 100px;
     margin-top: 0%;
 
@@ -40,8 +41,8 @@
     flex-direction: row;
 }
 .card {
-    width: 27rem;
-    height: 28rem;
+    width: 100%;
+    height: 26rem;
     /* border-radius: 10px; */
     cursor: pointer;
     position: relative;
@@ -52,7 +53,7 @@
     position: absolute;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     top: 0;
     left: 0;
     opacity: 0.9;
@@ -91,6 +92,54 @@ line-height: normal;
   }
   .servTitle{
     transition: inset .3s ease-out;
-    bottom: 150px;
+    bottom: 100px;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .container{ 
+    margin-left: 3%;
+    margin-bottom: 100px;
+    margin-top: 0%;
+
+}
+}
+@media only screen and (max-width:1000px) {
+  .cardimg{ 
+    height: 400px;
+
+}
+.card{ 
+  height: 25rem;
+
+}
+.containerh1{
+  font-size: 32px;
+}
+.containerp{
+  font-size: 24px;
+  line-height: 40px;
+}
+}
+@media only screen and (max-width:965px) {
+  .hoverText{
+    margin-top: 15px;
+  }
+  .servTitle{
+    font-size: 24px !important;
+    margin-bottom: 30px !important;
+  }
+}
+@media only screen and (max-width:768px) {
+  .cardscontainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding-left: 15%;
+  }
+  
+  .servTitle{
+    font-size: 24px !important;
+    margin-bottom: 0px !important;
   }
 }

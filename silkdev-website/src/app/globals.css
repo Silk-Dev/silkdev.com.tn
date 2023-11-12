@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
 
 body{
-  margin: 0px !important;
-  padding: 0px !important;
-  margin-block-end:0px;
-  margin-block-start:0px;
-  margin-inline-start:0px;
-  margin-inline-end:0px;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
 }
  .carousel .slider-wrapper{
   width: 65% !important;
@@ -27,4 +24,6 @@ body{
 }
 .box{
   margin: 0;
+}#ourblog_containercard__865_3 > div > div > div.carousel.carousel-slider > div > ul > li:nth-child(2) > div > div > div > div.ourblog_spaceBetween__fXw4I > img{
+  width: 10%;
 }

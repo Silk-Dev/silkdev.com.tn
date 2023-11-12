@@ -6,9 +6,9 @@ const Portfolio = () => {
   return (
     <div className={styles.background}>
         <h1 className={styles.secTitle}>Our Projects</h1>
-        <div style={{ display: 'flex', flexWrap: 'wrap' ,justifyContent:"center"}}>
+        <div className={styles.projCont} >
         {projects.map((project) => 
-        <div style={{width:'40%', padding: '10px' }} key={project.id}>
+        <div className={styles.projBox} key={project.id}>
           <Project 
         id={project.id} 
         title={project.title}

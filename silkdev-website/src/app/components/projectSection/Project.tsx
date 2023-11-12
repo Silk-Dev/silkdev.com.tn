@@ -8,7 +8,7 @@ const Project = (props:any) => {
   console.log(props.img);
   
   return (
-    <div className={styles.projectWrapper} style={{marginTop:(props.id%2==0)? "100px" :"0"}}>
+    <div className={props.id % 2 === 0 ? styles.projectWrapperRight : styles.projectWrapperLeft}>
       
       {!show &&
       <div className={styles.projectContainer} >
