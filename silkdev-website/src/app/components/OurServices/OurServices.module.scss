@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap');
-
+@media only screen and (min-width: 601px){
+  .mobile{
+    display:none
+  }
 .black-overlay {
   filter: brightness(0.7); /* Adjust the brightness value to control the darkness (0.4 = 60% darkness) */
  
@@ -9,9 +12,7 @@
 .container{ 
     display: flex;
     flex-direction: column;
-    margin-left: 13%;
-    margin-bottom: 100px;
-    margin-top: 0%;
+   
 
 }
 .containerh1{
@@ -23,12 +24,13 @@
     font-weight: 500;
     line-height: 76px;
     letter-spacing: -0.84px;
+    margin-left:67px
 }
 .containerp{
     color: rgba(0, 0, 0, 0.67);
     font-family: Poppins;
     font-size: 30px;
-
+    margin-left:67px;
     font-style: normal;
     font-weight: 400;
     line-height: 55px;
@@ -36,8 +38,11 @@
 
 }
 .cardscontainer{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 .card {
     width: 27rem;
@@ -93,4 +98,100 @@ line-height: normal;
     transition: inset .3s ease-out;
     bottom: 150px;
   }
-}
+}}
+@media only screen and (max-width: 600px){
+  .desktop{
+    display:none
+  }
+  .black-overlay {
+    filter: brightness(0.7); /* Adjust the brightness value to control the darkness (0.4 = 60% darkness) */
+   
+  }
+  
+  .container{ 
+      display: flex;
+      flex-direction: column;
+      margin-left: 13%;
+      margin-bottom: 100px;
+      margin-top: 0%;
+  
+  }
+  .containerh1{
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -0.64px;
+  }
+  .containerp{
+    margin-top: 0%;
+    color: rgba(0, 0, 0, 0.67);
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+  
+  }
+  .cardscontainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -40px;
+  }
+  .card {
+    width: 339px;
+    height: 352px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+     
+  
+   .cardimg {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      transition: opacity 0.2s ease-out;
+    }
+  
+    h2 {
+      position: absolute;
+      inset: auto auto 30px 30px;
+      margin: 0;
+      transition: inset 0.3s 0.3s ease-out;
+     
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #FFF;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+    }
+  }
+  
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+  .hoverText{
+    display: none;
+  }
+  .card:hover{
+    .hoverText{
+      display: block;
+      margin-left: 25px;
+      opacity: 1;
+      transition: opacity .5s .1s ease-in;
+    }
+    .servTitle{
+      transition: inset .3s ease-out;
+      bottom: 150px;
+    }
+  }}
